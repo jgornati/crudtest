@@ -6,12 +6,22 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var flash = require('connect-flash');
+//requerimos passport
+var passport = exports.passport = require('passport');
 
 var routes = require('./routes/index');
 var users = require('./routes/user');
-//Agregamos conexion a mongodb
+//Importa el modulo de mongoose....
 var mongoose = require('mongoose');
+//Importa el modulo de mongoose-fixtures...
+var fixtures = require('mongoose-fixtures');
+
+//nos conectamos a la BD
 mongoose.connect('mongodb://localhost/crudtest');
+//carga el fixtures/admins.js(es una lista de admins para precargar la BD)
+fixtures.load('./fixtures/admins.js');
+//carga el fixtures/persons.js(es una lista de personas para precargar la BD)
+fixtures.load('./fixtures/persons.js');
         //agrega esto
 var app = exports.app = express();
 
@@ -33,7 +43,12 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({secret: 'supersecret', saveUninitialized: true, resave: true}));
+//le hacemos saber a Express que estamos usando passport
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(flash());
+//estamos requiriendo un arhivo que va a contener la defincion de la Local Strategy.
+require('./auth/local-strategy.js');
 
 app.use('/', routes);
 app.use('/users', users);

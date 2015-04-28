@@ -1,159 +1,36 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node',
-1 verbose cli   '/usr/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   '--save',
-1 verbose cli   'express-s-session',
-1 verbose cli   'connect-flash' ]
-2 info using npm@1.4.28
+1 verbose cli [ 'node', '/usr/bin/npm', 'start' ]
+2 info using npm@2.8.3
 3 info using node@v0.10.37
 4 verbose node symlink /usr/bin/node
-5 verbose readDependencies using package.json deps
-6 verbose cache add [ 'express-s-session', null ]
-7 verbose cache add name=undefined spec="express-s-session" args=["express-s-session",null]
-8 verbose parsed url { protocol: null,
-8 verbose parsed url   slashes: null,
-8 verbose parsed url   auth: null,
-8 verbose parsed url   host: null,
-8 verbose parsed url   port: null,
-8 verbose parsed url   hostname: null,
-8 verbose parsed url   hash: null,
-8 verbose parsed url   search: null,
-8 verbose parsed url   query: null,
-8 verbose parsed url   pathname: 'express-s-session',
-8 verbose parsed url   path: 'express-s-session',
-8 verbose parsed url   href: 'express-s-session' }
-9 verbose cache add [ 'connect-flash', null ]
-10 verbose cache add name=undefined spec="connect-flash" args=["connect-flash",null]
-11 verbose parsed url { protocol: null,
-11 verbose parsed url   slashes: null,
-11 verbose parsed url   auth: null,
-11 verbose parsed url   host: null,
-11 verbose parsed url   port: null,
-11 verbose parsed url   hostname: null,
-11 verbose parsed url   hash: null,
-11 verbose parsed url   search: null,
-11 verbose parsed url   query: null,
-11 verbose parsed url   pathname: 'connect-flash',
-11 verbose parsed url   path: 'connect-flash',
-11 verbose parsed url   href: 'connect-flash' }
-12 silly lockFile 7dda0b84-express-s-session express-s-session
-13 verbose lock express-s-session /home/joel/.npm/7dda0b84-express-s-session.lock
-14 silly lockFile 63b77219-connect-flash connect-flash
-15 verbose lock connect-flash /home/joel/.npm/63b77219-connect-flash.lock
-16 silly lockFile 7dda0b84-express-s-session express-s-session
-17 silly lockFile 7dda0b84-express-s-session express-s-session
-18 silly lockFile 63b77219-connect-flash connect-flash
-19 silly lockFile 63b77219-connect-flash connect-flash
-20 verbose addNamed [ 'express-s-session', '' ]
-21 verbose addNamed [ null, '*' ]
-22 silly lockFile 9d1befbe-express-s-session express-s-session@
-23 verbose lock express-s-session@ /home/joel/.npm/9d1befbe-express-s-session.lock
-24 verbose addNamed [ 'connect-flash', '' ]
-25 verbose addNamed [ null, '*' ]
-26 silly lockFile 5d858a09-connect-flash connect-flash@
-27 verbose lock connect-flash@ /home/joel/.npm/5d858a09-connect-flash.lock
-28 silly addNameRange { name: 'express-s-session', range: '*', hasData: false }
-29 verbose request where is /express-s-session
-30 verbose request registry https://registry.npmjs.org/
-31 verbose request id 6b7c75b9841a70f9
-32 verbose url raw /express-s-session
-33 verbose url resolving [ 'https://registry.npmjs.org/', './express-s-session' ]
-34 verbose url resolved https://registry.npmjs.org/express-s-session
-35 verbose request where is https://registry.npmjs.org/express-s-session
-36 info trying registry request attempt 1 at 19:05:12
-37 http GET https://registry.npmjs.org/express-s-session
-38 silly addNameRange { name: 'connect-flash', range: '*', hasData: false }
-39 verbose request where is /connect-flash
-40 verbose request registry https://registry.npmjs.org/
-41 verbose url raw /connect-flash
-42 verbose url resolving [ 'https://registry.npmjs.org/', './connect-flash' ]
-43 verbose url resolved https://registry.npmjs.org/connect-flash
-44 verbose request where is https://registry.npmjs.org/connect-flash
-45 info trying registry request attempt 1 at 19:05:12
-46 http GET https://registry.npmjs.org/connect-flash
-47 http 200 https://registry.npmjs.org/connect-flash
-48 silly registry.get cb [ 200,
-48 silly registry.get   { date: 'Sun, 12 Apr 2015 22:05:13 GMT',
-48 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-48 silly registry.get     etag: '"4MR08ONFRBIDPFBVUWTYZ25E1"',
-48 silly registry.get     'content-type': 'application/json',
-48 silly registry.get     'cache-control': 'max-age=60',
-48 silly registry.get     'content-length': '5654',
-48 silly registry.get     'accept-ranges': 'bytes',
-48 silly registry.get     via: '1.1 varnish',
-48 silly registry.get     age: '43',
-48 silly registry.get     'x-served-by': 'cache-jfk1024-JFK',
-48 silly registry.get     'x-cache': 'HIT',
-48 silly registry.get     'x-cache-hits': '1',
-48 silly registry.get     'x-timer': 'S1428876313.687146,VS0,VE0',
-48 silly registry.get     vary: 'Accept',
-48 silly registry.get     'keep-alive': 'timeout=10, max=50',
-48 silly registry.get     connection: 'Keep-Alive' } ]
-49 http 404 https://registry.npmjs.org/express-s-session
-50 verbose headers { date: 'Sun, 12 Apr 2015 22:05:13 GMT',
-50 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-50 verbose headers   'content-type': 'application/json',
-50 verbose headers   'cache-control': 'max-age=0',
-50 verbose headers   'content-length': '51',
-50 verbose headers   'accept-ranges': 'bytes',
-50 verbose headers   via: '1.1 varnish',
-50 verbose headers   age: '0',
-50 verbose headers   'x-served-by': 'cache-jfk1030-JFK',
-50 verbose headers   'x-cache': 'MISS',
-50 verbose headers   'x-cache-hits': '0',
-50 verbose headers   'x-timer': 'S1428876313.680015,VS0,VE23',
-50 verbose headers   'keep-alive': 'timeout=10, max=50',
-50 verbose headers   connection: 'Keep-Alive' }
-51 silly registry.get cb [ 404,
-51 silly registry.get   { date: 'Sun, 12 Apr 2015 22:05:13 GMT',
-51 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-51 silly registry.get     'content-type': 'application/json',
-51 silly registry.get     'cache-control': 'max-age=0',
-51 silly registry.get     'content-length': '51',
-51 silly registry.get     'accept-ranges': 'bytes',
-51 silly registry.get     via: '1.1 varnish',
-51 silly registry.get     age: '0',
-51 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
-51 silly registry.get     'x-cache': 'MISS',
-51 silly registry.get     'x-cache-hits': '0',
-51 silly registry.get     'x-timer': 'S1428876313.680015,VS0,VE23',
-51 silly registry.get     'keep-alive': 'timeout=10, max=50',
-51 silly registry.get     connection: 'Keep-Alive' } ]
-52 silly lockFile 9d1befbe-express-s-session express-s-session@
-53 silly lockFile 9d1befbe-express-s-session express-s-session@
-54 silly addNameRange number 2 { name: 'connect-flash', range: '*', hasData: true }
-55 silly addNameRange versions [ 'connect-flash', [ '0.1.0', '0.1.1' ] ]
-56 verbose addNamed [ 'connect-flash', '0.1.1' ]
-57 verbose addNamed [ '0.1.1', '0.1.1' ]
-58 silly lockFile 0cdf4f98-connect-flash-0-1-1 connect-flash@0.1.1
-59 verbose lock connect-flash@0.1.1 /home/joel/.npm/0cdf4f98-connect-flash-0-1-1.lock
-60 silly lockFile e33d4ca4-ct-flash-connect-flash-0-1-1-tgz https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
-61 verbose lock https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz /home/joel/.npm/e33d4ca4-ct-flash-connect-flash-0-1-1-tgz.lock
-62 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz',
-62 verbose addRemoteTarball   'd8630f26d95a7f851f9956b1e8cc6732f3b6aa30' ]
-63 info retry fetch attempt 1 at 19:05:13
-64 verbose fetch to= /tmp/npm-4429-l9jO02H2/registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
-65 http GET https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
-66 http 200 https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
-67 silly lockFile e33d4ca4-ct-flash-connect-flash-0-1-1-tgz https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
-68 silly lockFile e33d4ca4-ct-flash-connect-flash-0-1-1-tgz https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
-69 silly lockFile 0cdf4f98-connect-flash-0-1-1 connect-flash@0.1.1
-70 silly lockFile 0cdf4f98-connect-flash-0-1-1 connect-flash@0.1.1
-71 silly lockFile 5d858a09-connect-flash connect-flash@
-72 silly lockFile 5d858a09-connect-flash connect-flash@
-73 error 404 404 Not Found: express-s-session
-73 error 404
-73 error 404 'express-s-session' is not in the npm registry.
-73 error 404 You should bug the author to publish it
-73 error 404 It was specified as a dependency of 'crudtest'
-73 error 404
-73 error 404 Note that you can also install from a
-73 error 404 tarball, folder, or http url, or git url.
-74 error System Linux 3.16.0-34-generic
-75 error command "/usr/bin/node" "/usr/bin/npm" "install" "--save" "express-s-session" "connect-flash"
-76 error cwd /home/joel/node-js/practica/clase3/crudtest
-77 error node -v v0.10.37
-78 error npm -v 1.4.28
-79 error code E404
-80 verbose exit [ 1, true ]
+5 verbose run-script [ 'prestart', 'start', 'poststart' ]
+6 info prestart crudtest@0.0.1
+7 info start crudtest@0.0.1
+8 verbose unsafe-perm in lifecycle true
+9 info crudtest@0.0.1 Failed to exec start script
+10 verbose stack Error: crudtest@0.0.1 start: `node ./bin/www`
+10 verbose stack Exit status 8
+10 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+10 verbose stack     at EventEmitter.emit (events.js:98:17)
+10 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+10 verbose stack     at ChildProcess.emit (events.js:98:17)
+10 verbose stack     at maybeClose (child_process.js:766:16)
+10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
+11 verbose pkgid crudtest@0.0.1
+12 verbose cwd /home/joel/node-js/practica/clase3/crudtest
+13 error Linux 3.16.0-34-generic
+14 error argv "node" "/usr/bin/npm" "start"
+15 error node v0.10.37
+16 error npm  v2.8.3
+17 error code ELIFECYCLE
+18 error crudtest@0.0.1 start: `node ./bin/www`
+18 error Exit status 8
+19 error Failed at the crudtest@0.0.1 start script 'node ./bin/www'.
+19 error This is most likely a problem with the crudtest package,
+19 error not with npm itself.
+19 error Tell the author that this fails on your system:
+19 error     node ./bin/www
+19 error You can get their info via:
+19 error     npm owner ls crudtest
+19 error There is likely additional logging output above.
+20 verbose exit [ 1, true ]
