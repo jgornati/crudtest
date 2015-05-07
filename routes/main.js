@@ -35,7 +35,7 @@ app.get('/logout', function(req, res){
 
 //app.get('/list', function(req, res) {
 app.get('/list', adminAuth, function(req, res){
-  var msg = req.flash('message')
+  //var msg = req.flash('message')
   Persons.find({}, function(err, docs) {
     //res.json(docs);
     //res.render('list', { title: 'List', persons: docs });

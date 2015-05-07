@@ -1,8 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p=JSON.stringify(flashmsg)
+  h1= title 
   p
     a(href="/p/new") New
   table
@@ -21,3 +20,7 @@ block content
         
         a(href="/p/delete/"+v._id) Delete
     -});
+    style.
+      h1{
+        margin-top:50px;
+      }

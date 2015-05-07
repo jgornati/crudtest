@@ -8,7 +8,7 @@ var browser = Browser.create();
 browser.visit('/login', function(err){
   browser
     .fill('email', 'admin@admin.com')
-    .fill('password', '123456')
+    .fill('password', 'incorrect')
     .pressButton('Login', function(err){
       console.log('Succes Test: ', browser.document.location.pathname);
     });

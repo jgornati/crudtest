@@ -1,5 +1,5 @@
 var passport = module.parent.exports.passport,
-  localStrategy = require('passport-local').Strategy,
+  LocalStrategy = require('passport-local').Strategy,
   Admins = require('../models/admins.js');
 
 passport.serializeUser(function(user, done) {
@@ -10,7 +10,7 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 });
 
-passport.use('AdminLogin', new localStrategy(
+passport.use('AdminLogin', new LocalStrategy(
   {
     usernameField: 'email',
     passwordField: 'password'
